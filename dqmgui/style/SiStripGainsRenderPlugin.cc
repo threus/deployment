@@ -316,6 +316,7 @@ private:
 
     if (legend!=0)
       {
+	legend->SetBit(kCanDelete);
         if( o.name.find("TIB")!=std::string::npos) legend->AddEntry(obj,"TIB","l");
         else if ( o.name.find("TOB")!=std::string::npos) legend->AddEntry(obj,"TOB","l");
         else if ( o.name.find("TID")!=std::string::npos ) 
